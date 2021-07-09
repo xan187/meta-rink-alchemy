@@ -1,0 +1,12 @@
+if (window.ethereum) {
+  window.ethereum
+    .enable()
+    .then(accounts => {
+      // Metamask is ready to go!
+    })
+    .catch(reason => {
+      // Handle error. Likely the user rejected the login.
+    });
+} else {
+  // The user doesn't have Metamask installed.
+}
